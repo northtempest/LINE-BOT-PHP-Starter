@@ -11,12 +11,12 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 
-if($arrJson['events'][0]['message']['text'] == "Hi"){
+if($arrJson['events'][0]['message']['text'] == "Hi","hi","hello","Hello","Sub","yo","Yo"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Hi you are ".$arrJson['events'][0]['source']['userId'];
-}else if($arrJson['events'][0]['message']['text'] == "How are you"){
+  $arrPostData['messages'][0]['text'] = "Hi you are ".$arrJson['events'][0]['userId'];
+}else if($arrJson['events'][0]['message']['text'] == "How are you", "how r u", "how are you", "How are you ?", "how r u ?", "how are you ?"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
@@ -26,16 +26,26 @@ if($arrJson['events'][0]['message']['text'] == "Hi"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = ".... I'm tried";
-}else if($arrJson['events'][0]['message']['text'] == "ดี"){
+}else if($arrJson['events'][0]['message']['text'] == "how r u"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "งืมม เทอคือ".$arrJson['events'][0]['source']['userId'];
+  $arrPostData['messages'][0]['text'] = "huhhh I wanna go home";
+}else if($arrJson['events'][0]['message']['text'] == ""){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = ".... I'm tried";
+}else if($arrJson['events'][0]['message']['text'] == "Ok"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = ".... I'm tried";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Meh...";
+  $arrPostData['messages'][0]['imagepng'] = 'https://github.com/northtempest/LINE-BOT-PHP-Starter/tree/master/img/superthumb.png';
 }
 
 
