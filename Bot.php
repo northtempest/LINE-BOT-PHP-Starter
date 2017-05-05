@@ -11,7 +11,7 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 
-if($arrJson['events'][0]['message']['text'] == "Hi","hi","hello","Hello","Sub","yo","Yo"){
+if($arrJson['events'][0]['message']['text'] == "Hi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
@@ -45,7 +45,7 @@ if($arrJson['events'][0]['message']['text'] == "Hi","hi","hello","Hello","Sub","
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['imagepng'] = 'https://github.com/northtempest/LINE-BOT-PHP-Starter/tree/master/img/superthumb.png';
+  $arrPostData['messages'][0]['imagepng'] = ('https://github.com/northtempest/LINE-BOT-PHP-Starter/tree/master/img/superthumb.png');
 }
 
 
