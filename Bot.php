@@ -47,7 +47,17 @@ if($arrJson['events'][0]['message']['text'] == "Hi"){
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['originalContentUrl'] = "https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg";
-
+{
+  "to":["$arrJson"],
+  "toChannel":1383378250,
+  "eventType":"138311608800106203",
+  "content":{
+    "contentType":2,
+    "toType":1,
+    "originalContentUrl":"http://example.com/original.jpg",
+    "previewImageUrl":"http://example.com/preview.jpg"
+  }
+}
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
 curl_setopt($ch, CURLOPT_HEADER, false);
