@@ -45,7 +45,7 @@ if($arrJson['events'][0]['message']['text'] == "Hi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['imagepng'] = 'https://avatars3.githubusercontent.com/u/3346407?v=3&s=460';
+  $arrPostData['messages'][0]['imagepng'] = "https://avatars3.githubusercontent.com/u/3346407?v=3&s=460";
 }
 
 
