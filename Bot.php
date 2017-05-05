@@ -15,7 +15,7 @@ if($arrJson['events'][0]['message']['text'] == "Hi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Hi you are ".$arrJson['events'][0]['userId'];
+  $arrPostData['messages'][0]['text'] = "Hi you are ".$arrJson['events'][0]['source']['userId'];
 }else if($arrJson['events'][0]['message']['text'] == "How are you", "how r u", "how are you", "How are you ?", "how r u ?", "how are you ?"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
@@ -45,7 +45,7 @@ if($arrJson['events'][0]['message']['text'] == "Hi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['imagepng'] = ('https://github.com/northtempest/LINE-BOT-PHP-Starter/tree/master/img/superthumb.png');
+  $arrPostData['messages'][0]['imagepng'] = 'https://avatars3.githubusercontent.com/u/3346407?v=3&s=460';
 }
 
 
