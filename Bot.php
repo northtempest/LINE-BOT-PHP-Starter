@@ -44,7 +44,7 @@ if($arrJson['events'][0]['message']['text'] == "Hi"){
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "image";
+  $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['originalContentUrl'] = "https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg";
 
