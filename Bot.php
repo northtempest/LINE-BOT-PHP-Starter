@@ -48,7 +48,9 @@ if($arrJson['events'][0]['message']['text'] == "Hi"){
   $arrPostData['messages'][0]['originalContentUrl'] = "https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://raw.githubusercontent.com/kittinan/Sample-Line-Bot/master/images/beer_preview.jpg";
 {
-  "to":["$arrJson"],
+   "from":"u2ddf2eb3c959e561f6c9fa2ea732e7eb8",
+    "fromChannel":1341301815,
+  "to":["U9071e29ff016ddcf91a356ee171b6048"],
   "toChannel":1383378250,
   "eventType":"138311608800106203",
   "content":{
